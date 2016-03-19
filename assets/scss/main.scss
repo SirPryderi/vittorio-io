@@ -20,9 +20,15 @@ $color6: #fdfffc; // TEXT WHITE
 
 $first_section_width: 40%;
 
-$break-medium: 990px;
 
-$break-small: 512px;
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px ;
+$breakpoint-desktop: 1024px;
+
+$break-medium: $breakpoint-tablet;//990px;
+
+$break-small: $breakpoint-mobile;//;512px;
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
 

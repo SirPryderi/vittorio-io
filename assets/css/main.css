@@ -20,7 +20,7 @@ html, body {
   font-size: 14pt;
   overflow: hidden;
   color: #50514f; }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 480px) {
     html, body {
       overflow: scroll; } }
 
@@ -32,10 +32,10 @@ section {
   height: 100%;
   position: relative;
   transition: all 1s; }
-  @media screen and (max-width: 990px) {
+  @media screen and (max-width: 768px) {
     section {
       width: 50% !important; } }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 480px) {
     section {
       width: 100% !important;
       min-height: 100%; } }
@@ -50,7 +50,7 @@ section {
   width: 135px;
   height: 135px;
   right: -67.5px; }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 480px) {
     #rocket {
       display: none; } }
 
@@ -95,7 +95,7 @@ p {
   padding-top: 0;
   text-align: justify;
   overflow-y: auto; }
-  @media screen and (max-width: 512px) {
+  @media screen and (max-width: 480px) {
     #second {
       overflow-y: visible; } }
   #second #second_content {
