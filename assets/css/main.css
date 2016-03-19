@@ -17,9 +17,12 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 500%;
+  font-size: 14pt;
   overflow: hidden;
   color: #50514f; }
+  @media screen and (max-width: 512px) {
+    html, body {
+      overflow: scroll; } }
 
 section {
   width: 50%;
@@ -27,17 +30,29 @@ section {
   padding: 0;
   margin: 0;
   height: 100%;
-  position: relative; }
+  position: relative;
+  transition: all 1s; }
+  @media screen and (max-width: 990px) {
+    section {
+      width: 50% !important; } }
+  @media screen and (max-width: 512px) {
+    section {
+      width: 100% !important;
+      min-height: 100%; } }
 
 .font-smaller {
   font-size: 50%; }
 
 #rocket {
   position: absolute;
+  z-index: 2;
   bottom: -135px;
   width: 135px;
   height: 135px;
   right: -67.5px; }
+  @media screen and (max-width: 512px) {
+    #rocket {
+      display: none; } }
 
 h1, h2, h3, h4, h5, h6 {
   color: #f25f5c;
@@ -73,13 +88,16 @@ p {
   margin: 0; }
 
 #second {
-  background-color: color6;
+  background-color: #fdfffc;
   width: 60%;
   float: right;
   padding: 50px;
   padding-top: 0;
   text-align: justify;
   overflow-y: auto; }
+  @media screen and (max-width: 512px) {
+    #second {
+      overflow-y: visible; } }
   #second #second_content {
     transition: 1000ms all;
     opacity: 0; }

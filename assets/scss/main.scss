@@ -20,6 +20,10 @@ $color6: #fdfffc; // TEXT WHITE
 
 $first_section_width: 40%;
 
+$break-medium: 990px;
+
+$break-small: 512px;
+
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
 
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
@@ -35,9 +39,13 @@ html, body {
     
     font-family: 'Quicksand', sans-serif;
     
-    font-weight: 500%;
+    font-size: 14pt;
     
     overflow: hidden;
+    
+    @media screen and (max-width: $break-small) {
+        overflow: scroll;
+    }
     
     color: $color1;
 }
@@ -51,6 +59,18 @@ section {
     height: 100%;
     
     position: relative;
+    
+    transition: all 1s;
+    
+    @media screen and (max-width: $break-medium) {
+        width: 50% !important;
+    }
+    
+    @media screen and (max-width: $break-small) {
+        width: 100% !important;
+        min-height: 100%;
+        //height: auto;
+    }
 }
 
 .font-smaller {
@@ -63,6 +83,8 @@ section {
     
     position: absolute;
     
+    z-index: 2;
+    
     bottom: -$size;
     
     width: $size;
@@ -71,6 +93,10 @@ section {
     right: -$size/2;
     
     //padding-left: -75px;
+    
+    @media screen and (max-width: $break-small) {
+        display: none;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -128,9 +154,10 @@ p {
 }
 
 #second {
-    background-color: color6;
+    background-color: $color6;
     
     width: 100% - $first_section_width;
+
     
     float: right;
     
@@ -140,7 +167,11 @@ p {
     
     text-align: justify;
     
-    overflow-y: auto; 
+    overflow-y: auto;
+    
+    @media screen and (max-width: $break-small) {
+        overflow-y: visible;
+    }
     
     
     
