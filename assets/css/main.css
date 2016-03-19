@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 19, 2016, 3:06:36 PM
+    Author     : Vittorio
+*/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500%;
+  overflow: hidden;
+  color: #50514f; }
+
+section {
+  width: 50%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative; }
+
+.font-smaller {
+  font-size: 50%; }
+
+#rocket {
+  position: absolute;
+  bottom: -135px;
+  width: 135px;
+  height: 135px;
+  right: -67.5px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #f25f5c;
+  font-weight: 50%;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 2em; }
+
+#first {
+  float: left;
+  background-color: #247ba0;
+  width: 40%; }
+  #first #first_content {
+    top: 50%;
+    position: relative;
+    text-align: center;
+    font-size: 34pt;
+    transition: 1000ms all;
+    transform: translateY(-200%);
+    color: #fdfffc; }
+    #first #first_content #avatar {
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 100%;
+      border: 5px solid #fdfffc;
+      transition: 400ms all; }
+      .loaded #first #first_content #avatar:hover {
+        max-width: 250px;
+        max-height: 250px; }
+    .loaded #first #first_content {
+      transform: translateY(-50%); }
+
+p {
+  margin: 0; }
+
+#second {
+  background-color: color6;
+  width: 60%;
+  float: right;
+  padding: 50px;
+  padding-top: 0;
+  text-align: justify;
+  overflow-y: auto; }
+  #second #second_content {
+    transition: 1000ms all;
+    opacity: 0; }
+    .loaded #second #second_content {
+      opacity: 1; }
+
+/*# sourceMappingURL=main.css.map */

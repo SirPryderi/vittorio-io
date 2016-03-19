@@ -1,0 +1,156 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 19, 2016, 3:06:36 PM
+    Author     : Vittorio
+*/
+
+
+// https://coolors.co/app/50514f-f25f5c-ffe066-247ba0-70c1b3
+$color1: #50514f; //rgba(80, 81, 79, 100) // GREY
+$color2: #f25f5c; //rgba(242, 95, 92, 100) // RED
+$color3: #ffe066; //rgba(255, 224, 102, 100) // YELLOW
+$color4: #247ba0; //rgba(36, 123, 160, 100)
+$color5: #70c1b3; //rgba(112, 193, 179, 100)
+$color6: #fdfffc; // TEXT WHITE
+
+
+$first_section_width: 40%;
+
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+    font-family: 'Quicksand', sans-serif;
+    
+    font-weight: 500%;
+    
+    overflow: hidden;
+    
+    color: $color1;
+}
+
+section {
+    width: 50%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    
+    height: 100%;
+    
+    position: relative;
+}
+
+.font-smaller {
+    font-size: 50%;
+}
+
+#rocket {
+    
+    $size: 135px;
+    
+    position: absolute;
+    
+    bottom: -$size;
+    
+    width: $size;
+    height: $size;
+    
+    right: -$size/2;
+    
+    //padding-left: -75px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color2;
+    font-weight: 50%;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 2em;
+}
+
+#first {
+    float: left;
+    background-color: $color4;
+    
+    width: $first_section_width;
+    
+    #first_content {
+        
+        #avatar{
+            max-width: 200px;
+            max-height: 200px;
+            
+            border-radius: 100%;
+            
+            border: 5px solid $color6;
+            
+            transition: 400ms all;
+            
+            .loaded &:hover {
+                max-width: 250px;
+                max-height: 250px;
+            }
+        }
+        
+        top: 50%;
+        position: relative;
+        
+        text-align: center;
+        
+        font-size: 34pt;
+        
+        transition: 1000ms all;
+        
+        transform: translateY(-200%);
+        
+        .loaded &{
+            transform: translateY(-50%);
+        }
+        
+        color: $color6;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+#second {
+    background-color: color6;
+    
+    width: 100% - $first_section_width;
+    
+    float: right;
+    
+    padding: 50px;
+    
+    padding-top: 0;
+    
+    text-align: justify;
+    
+    overflow-y: auto; 
+    
+    
+    
+    #second_content {
+        transition: 1000ms all;
+        
+        opacity: 0;
+        
+        .loaded & {
+            opacity: 1;
+        }
+    }
+}
