@@ -141,6 +141,7 @@
 <script>
     var rocket = $('#rocket');
     var second = $("#second");
+    var firstContent = $("#first_content");
     var secondContent = $('#second_content');
 
     $(window).on("load", function () {
@@ -155,6 +156,8 @@
         });
 
         $('body').addClass('loaded');
+
+        firstContent.animate({top: "50%"}, 1000);
     });
 </script>
 </body>

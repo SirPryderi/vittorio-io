@@ -28,6 +28,8 @@ $break-small: $breakpoint-mobile; //;512px;
 
 $min-height: 560px;
 
+$animation-time: 1s;
+
 * {
   box-sizing: border-box;
 }
@@ -99,8 +101,6 @@ section {
 
   position: relative;
 
-  transition: all 1s;
-
   @media screen and (max-width: $break-medium) {
     width: 50% !important;
   }
@@ -109,6 +109,10 @@ section {
     width: 100% !important;
     min-height: 100%;
     //height: auto;
+  }
+
+  .loaded & {
+    transition: width 1s;
   }
 }
 
@@ -141,7 +145,7 @@ section {
     left: -$size/2;
   }
 
-  transition: left 1000ms;
+  transition: left $animation-time;
 
   @media screen and (max-width: $break-medium) {
     left: 50%;
@@ -186,7 +190,9 @@ h1, h2, h3, h4, h5, h6 {
 
       border: 5px solid $white;
 
-      transition: 400ms all;
+      $time: 400ms;
+
+      transition: max-width $time, max-height $time;
 
       .loaded &:hover {
         max-width: 250px;
@@ -201,22 +207,14 @@ h1, h2, h3, h4, h5, h6 {
 
     padding-bottom: 40px;
 
-    top: 50%;
+    top: -60%;
+    transform: translateY(-50%);
+
     position: relative;
 
     text-align: center;
 
     font-size: 34pt;
-
-    //min-height: 560px;
-
-    transition: 1000ms all;
-
-    transform: translateY(-200%);
-
-    .loaded & {
-      transform: translateY(-50%);
-    }
   }
 
   #icons {
@@ -256,13 +254,12 @@ p {
 
   overflow-y: auto;
 
-
   @media screen and (max-width: $break-small) {
     overflow-y: visible;
   }
 
   #second_content {
-    transition: 1000ms all;
+    transition: opacity $animation-time;
 
     padding-bottom: 50px;
 
