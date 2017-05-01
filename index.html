@@ -143,6 +143,7 @@
     var second = $("#second");
     var firstContent = $("#first_content");
     var secondContent = $('#second_content');
+    var icons = $('#icons');
 
     $(window).on("load", function () {
         second.scroll(function () {
@@ -158,6 +159,8 @@
         $('body').addClass('loaded');
 
         firstContent.animate({top: "50%"}, 1000);
+
+        icons.animate({opacity: 1}, 1000);
     });
 </script>
 </body>
