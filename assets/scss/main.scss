@@ -8,186 +8,274 @@ and open the template in the editor.
     Author     : Vittorio
 */
 
-
 // https://coolors.co/app/50514f-f25f5c-ffe066-247ba0-70c1b3
-$color1: #50514f; //rgba(80, 81, 79, 100) // GREY
-$color2: #f25f5c; //rgba(242, 95, 92, 100) // RED
-$color3: #ffe066; //rgba(255, 224, 102, 100) // YELLOW
-$color4: #247ba0; //rgba(36, 123, 160, 100)
-$color5: #70c1b3; //rgba(112, 193, 179, 100)
-$color6: #fdfffc; // TEXT WHITE
-
+$grey: #50514f; //rgba(80, 81, 79, 100) // GREY
+$red: #f25f5c; //rgba(242, 95, 92, 100) // RED
+$yellow: #ffe066; //rgba(255, 224, 102, 100) // YELLOW
+$blue: #247ba0; //rgba(36, 123, 160, 100)
+$light_blue: #70c1b3; //rgba(112, 193, 179, 100)
+$white: #fdfffc; // TEXT WHITE
 
 $first_section_width: 40%;
 
-
-
 $breakpoint-mobile: 480px;
-$breakpoint-tablet: 768px ;
+$breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 
-$break-medium: $breakpoint-tablet;//990px;
+$break-medium: $breakpoint-tablet; //990px;
 
-$break-small: $breakpoint-mobile;//;512px;
+$break-small: $breakpoint-mobile; //;512px;
 
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
-
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+$min-height: 560px;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    
-    font-family: 'Quicksand', sans-serif;
-    
-    font-size: 14pt;
-    
-    overflow: hidden;
-    
-    @media screen and (max-width: $break-small) {
-        overflow: scroll;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  min-height: $min-height / 1.5;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 14pt;
+
+  overflow: hidden;
+
+  @media screen and (max-width: $break-small) {
+    overflow: scroll;
+  }
+
+  @media screen and (max-height: $min-height) {
+    overflow-y: scroll;
+  }
+
+  color: $grey;
+}
+
+a {
+  text-decoration: none;
+
+  color: $blue;
+
+  font-weight: bold;
+
+  &:hover {
+    color: $yellow;
+  }
+
+  &:active {
+    color: $light_blue;
+  }
+
+  #icons & {
+    color: $white;
+
+    transition: all 200ms;
+
+    &:hover {
+      font-size: 23pt;
+      color: $light_blue;
     }
-    
-    color: $color1;
+
+    &:active {
+      color: $yellow;
+    }
+  }
 }
 
 section {
-    width: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    
-    height: 100%;
-    
-    position: relative;
-    
-    transition: all 1s;
-    
-    @media screen and (max-width: $break-medium) {
-        width: 50% !important;
-    }
-    
-    @media screen and (max-width: $break-small) {
-        width: 100% !important;
-        min-height: 100%;
-        //height: auto;
-    }
+  width: 50%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  height: 100%;
+
+  position: relative;
+
+  transition: all 1s;
+
+  @media screen and (max-width: $break-medium) {
+    width: 50% !important;
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 100% !important;
+    min-height: 100%;
+    //height: auto;
+  }
 }
 
 .font-smaller {
-    font-size: 50%;
+  font-size: 50%;
 }
 
 #rocket {
-    
-    $size: 135px;
-    
-    position: absolute;
-    
-    z-index: 2;
-    
-    bottom: -$size;
-    
+
+  $size: 135px;
+
+  position: fixed;
+
+  z-index: 2;
+
+  bottom: -$size;
+
+  width: $size/3;
+  height: $size;
+
+  left: $first_section_width;
+
+  pointer-events: none;
+
+  svg {
     width: $size;
     height: $size;
-    
-    right: -$size/2;
-    
-    //padding-left: -75px;
-    
-    @media screen and (max-width: $break-small) {
-        display: none;
-    }
+    position: absolute;
+    top: 0;
+    left: -$size/2;
+  }
+
+  transition: left 1000ms;
+
+  @media screen and (max-width: $break-medium) {
+    left: 50%;
+  }
+
+  @media screen and (max-width: $break-small) {
+    width: 100% !important;
+    min-height: 100%;
+    //height: auto;
+  }
+
+  //padding-left: -75px;
+
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: $color2;
-    font-weight: 50%;
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 2em;
+  color: $red;
+  font-weight: 500;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 2em;
 }
 
 #first {
-    float: left;
-    background-color: $color4;
-    
-    width: $first_section_width;
-    
-    #first_content {
-        
-        #avatar{
-            max-width: 200px;
-            max-height: 200px;
-            
-            border-radius: 100%;
-            
-            border: 5px solid $color6;
-            
-            transition: 400ms all;
-            
-            .loaded &:hover {
-                max-width: 250px;
-                max-height: 250px;
-            }
-        }
-        
-        top: 50%;
-        position: relative;
-        
-        text-align: center;
-        
-        font-size: 34pt;
-        
-        transition: 1000ms all;
-        
-        transform: translateY(-200%);
-        
-        .loaded &{
-            transform: translateY(-50%);
-        }
-        
-        color: $color6;
+
+  float: left;
+  background-color: $blue;
+
+  width: $first_section_width;
+
+  color: $white;
+
+  #first_content {
+
+    #avatar {
+      max-width: 200px;
+      max-height: 200px;
+
+      border-radius: 100%;
+
+      border: 5px solid $white;
+
+      transition: 400ms all;
+
+      .loaded &:hover {
+        max-width: 250px;
+        max-height: 250px;
+      }
+
+      @media screen and (max-height: $min-height) {
+        width: 40%;
+        height: 40%;
+      }
     }
+
+    padding-bottom: 40px;
+
+    top: 50%;
+    position: relative;
+
+    text-align: center;
+
+    font-size: 34pt;
+
+    //min-height: 560px;
+
+    transition: 1000ms all;
+
+    transform: translateY(-200%);
+
+    .loaded & {
+      transform: translateY(-50%);
+    }
+  }
+
+  #icons {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 100%;
+
+    font-size: 20pt;
+
+    text-align: center;
+  }
 }
 
 p {
-    margin: 0;
+  margin: 0 0 10px;
+}
+
+.no_word_break {
+  white-space: nowrap;
+}
+
+.indent {
+  padding-left: 15px;
 }
 
 #second {
-    background-color: $color6;
-    
-    width: 100% - $first_section_width;
+  background-color: $white;
 
-    
-    float: right;
-    
-    padding: 50px;
-    
-    padding-top: 0;
-    
-    text-align: justify;
-    
-    overflow-y: auto;
-    
-    @media screen and (max-width: $break-small) {
-        overflow-y: visible;
+  width: 100% - $first_section_width;
+
+  float: right;
+
+  padding: 0 50px 50px;
+
+  text-align: justify;
+
+  overflow-y: auto;
+
+
+  @media screen and (max-width: $break-small) {
+    overflow-y: visible;
+  }
+
+  #second_content {
+    transition: 1000ms all;
+
+    padding-bottom: 50px;
+
+    opacity: 0;
+
+    .loaded & {
+      opacity: 1;
     }
-    
-    
-    
-    #second_content {
-        transition: 1000ms all;
-        
-        opacity: 0;
-        
-        .loaded & {
-            opacity: 1;
-        }
-    }
+  }
 }
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700,300");
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
+
+@import 'font-awesome/font-awesome.scss';

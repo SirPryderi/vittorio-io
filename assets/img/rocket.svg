@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="rocket" viewBox="0 0 1024 850">
+<svg xmlns="http://www.w3.org/2000/svg" id="rocket" viewBox="0 0 1024 1024">
   <g id="Objects">
     <path id="rocket_exhaust" fill="#EAAB28" d="M510.03 926.227c96.39-115.564 36.634-166.877 36.634-166.877l-35.533-.234-.337-.004-35.533-.234s-60.426 50.522 34.432 167.347l-.003.417c.058-.07.11-.14.17-.21.057.07.11.142.17.212v-.42.003z"/>
     <g id="rocket_2_">
