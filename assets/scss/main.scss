@@ -76,7 +76,7 @@ a {
   #icons & {
     color: $white;
 
-    transition: all 200ms;
+    transition: color 200ms;
 
     &:hover {
       font-size: 23pt;
@@ -277,5 +277,3 @@ p {
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700,300");
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
-
-@import 'font-awesome/font-awesome.scss';

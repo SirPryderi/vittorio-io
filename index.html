@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css"/>
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Vittorio Iocolano">
     <meta name="author" content="Vittorio Iocolano personal website, containing biography and portfolio">
@@ -135,22 +137,21 @@
 <script src="assets/js/jquery/jquery.js" type="text/javascript"></script>
 <script>
     var rocket = $('#rocket');
+    var second = $("#second");
+    var secondContent = $('#second_content');
 
-    $(document).ready(function () {
+    $(window).on("load", function () {
+        second.scroll(function () {
+            var percentage = $(this).scrollTop() / (secondContent.height() - $(this).height() + 45);
+
+            var rocket_height = rocket.height();
+
+            var factor = -1 + 2 * percentage;
+
+            rocket.dequeue().animate({bottom: $(this).height() * percentage + (rocket_height * factor)}, 1000);
+        });
+
         $('body').addClass('loaded');
-    });
-
-
-    $("#second").scroll(function () {
-        var percentage = $(this).scrollTop() / ($('#second_content').height() - $(this).height() + 45);
-
-        var rocket_height = rocket.height();
-
-        var evil = -1 + 2 * percentage;
-
-        //bottom: -20 + (percentage *1.01) + '%'
-
-        rocket.dequeue().animate({bottom: $(this).height() * percentage + (rocket_height * evil)}, 1000);
     });
 </script>
 </body>
