@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/scss/main.css" rel="stylesheet" type="text/css"/>
     <meta content="width=device-width" name="viewport">
     <meta content="Vittorio Iocolano" name="author">
     <meta content="Vittorio Iocolano personal website, containing biography and portfolio" name="description">
@@ -179,8 +179,9 @@
                 <p>A Java application capable of calculating orbits, and launch windows to execute transfers between
                     them. The program features a 2D preview of the transfer, shown as a map of the Solar system, and
                     attempts to make the UIs as neat and light as possible.</p>
-                <a href="https://github.com/SirPryderi/Astrarium" target="_blank"><i class="fab fa-github"></i> Github
-                    Page</a>
+                <a href="https://github.com/SirPryderi/Astrarium" target="_blank">
+                    <i class="fab fa-github"></i> Github Page
+                </a>
             </div>
         </div>
 
@@ -192,9 +193,7 @@
                 <a href="https://www.instagram.com/sirpryderi/" target="_blank">@SirPryderi</a> on Instagram to see my
                 best shots!</p>
             <!-- LightWidget WIDGET -->
-            <iframe allowtransparency="true" class="lightwidget-widget"
-                    scrolling="no" src="//lightwidget.com/widgets/bda8f37c2308510c9a265553a6eb8f4c.html"
-                    style="width:100%;border:0;overflow:hidden;"></iframe>
+            <div id="instagram-feed" style="margin: -0.5%"></div>
         </div>
     </div>
 </section>
@@ -202,31 +201,7 @@
         crossorigin="anonymous"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-    var rocket = $('#rocket');
-    var second = $("#second");
-    var firstContent = $("#first_content");
-    var secondContent = $('#second_content');
-    var icons = $('#icons');
-
-    $(window).on("load", function () {
-        second.scroll(function () {
-            var percentage = $(this).scrollTop() / (secondContent.height() - $(this).height() + 45);
-
-            var rocket_height = rocket.height();
-
-            var factor = -1 + 2 * percentage;
-
-            rocket.dequeue().animate({bottom: $(this).height() * percentage + (rocket_height * factor)}, 1000);
-        });
-
-        $('body').addClass('loaded');
-
-        firstContent.animate({top: "50%"}, 1000);
-
-        icons.animate({opacity: 1}, 1000);
-    });
-</script>
-<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+<script src="assets/js/instagramFeed.min.js" type="text/javascript"></script>
+<script src="assets/js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

@@ -273,6 +273,14 @@ p {
   }
 }
 
+#instagram-feed img {
+  border-radius: 5px;
+  transition: 400ms all ease-out;
+  &:hover {
+    filter: contrast(120%) brightness(80%);
+  }
+}
+
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700,300");
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:500");
