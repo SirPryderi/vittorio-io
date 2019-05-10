@@ -273,7 +273,6 @@ p {
   #second_content {
     transition: opacity $animation-time;
 
-    padding-bottom: $padding;
     @media screen and (max-width: $break-small) {
       padding-bottom: $padding / 2;
     }
