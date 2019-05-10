@@ -1,9 +1,4 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
     Created on : Mar 19, 2016, 3:06:36 PM
     Author     : Vittorio
 */
@@ -23,9 +18,9 @@ $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 
 $break-medium: $breakpoint-tablet; //990px;
-
 $break-small: $breakpoint-mobile; //;512px;
 
+$padding: 50px;
 $min-height: 560px;
 
 $animation-time: 1s;
@@ -240,7 +235,12 @@ p {
 }
 
 .indent {
-  padding-left: 15px;
+  $size: 15px;
+  padding-left: $size;
+
+  @media screen and (max-width: $break-small) {
+    padding-left: $size / 2;
+  }
 }
 
 #second {
@@ -250,7 +250,7 @@ p {
 
   float: right;
 
-  padding: 0 50px 50px;
+  padding: 0 $padding $padding;
 
   text-align: justify;
 
@@ -258,12 +258,20 @@ p {
 
   @media screen and (max-width: $break-small) {
     overflow-y: visible;
+    padding: 0 ($padding / 2) ($padding / 2);
+  }
+
+  @media screen and (max-width: $break-medium) {
+    text-align: left;
   }
 
   #second_content {
     transition: opacity $animation-time;
 
-    padding-bottom: 50px;
+    padding-bottom: $padding;
+    @media screen and (max-width: $break-small) {
+      padding-bottom: $padding / 2;
+    }
 
     opacity: 0;
 
@@ -273,12 +281,30 @@ p {
   }
 }
 
-#instagram-feed img {
-  border-radius: 5px;
-  transition: 400ms all ease-out;
-  &:hover {
-    filter: contrast(120%) brightness(80%);
+#instagram-feed {
+  margin: -0.5%;
+  margin-top: 20px;
+
+  img {
+    border-radius: 5px;
+    transition: 400ms all ease-out;
+
+    &:hover {
+      filter: contrast(120%) brightness(80%);
+    }
   }
+}
+
+.hide-sm {
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,700,300");
