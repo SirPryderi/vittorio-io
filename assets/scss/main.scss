@@ -281,6 +281,9 @@ p {
   }
 
   #second_content {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: $padding;
     transition: opacity $animation-time;
 
     @media screen and (max-width: $break-small) {
