@@ -71,17 +71,19 @@ a {
   }
 
   #icons & {
+    font-size: 34px;
     color: $white;
     transition: all 200ms;
     vertical-align: bottom;
 
     &:hover {
-      font-size: 23pt;
-      color: $light_blue;
+      font-size: 40pt;
+      margin: 0 5px;
+      color: $yellow;
     }
 
     &:active {
-      color: $yellow;
+      color: $light_blue;
     }
   }
 }
@@ -210,11 +212,19 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 
     font-size: 34pt;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $yellow;
+      }
+    }
   }
 
   #icons {
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
 
     @media screen and (max-width: $break-small) {
       bottom: 10px;
