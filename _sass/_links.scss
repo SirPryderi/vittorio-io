@@ -1,0 +1,32 @@
+a {
+  text-decoration: none;
+
+  color: $blue;
+
+  font-weight: bold;
+
+  &:hover {
+    color: $yellow;
+  }
+
+  &:active {
+    color: $light_blue;
+  }
+
+  #icons & {
+    font-size: 34px;
+    color: $white;
+    transition: all 200ms;
+    vertical-align: bottom;
+
+    &:hover {
+      font-size: 40pt;
+      margin: 0 5px;
+      color: $yellow;
+    }
+
+    &:active {
+      color: $light_blue;
+    }
+  }
+}

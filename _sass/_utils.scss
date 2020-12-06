@@ -1,0 +1,11 @@
+.hide-sm {
+  @media screen and (max-width: $break-small) {
+    display: none;
+  }
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
