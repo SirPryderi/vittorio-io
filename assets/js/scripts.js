@@ -1,12 +1,12 @@
 var rocket = $('#rocket');
-var second = $("#second");
-var firstContent = $("#first_content");
-var secondContent = $('#second_content');
-var icons = $('#icons');
+var content = $("#content");
+var about = $("#sidebar .about");
+var contentInner = $('#content-inner');
+var icons = $('.social-icons');
 
 $(window).on("load", function () {
-    second.scroll(function () {
-        var percentage = $(this).scrollTop() / (secondContent.height() - $(this).height() + 45);
+    content.scroll(function () {
+        var percentage = $(this).scrollTop() / (contentInner.height() - $(this).height() + 45);
 
         var rocket_height = rocket.height();
 
@@ -17,7 +17,7 @@ $(window).on("load", function () {
 
     $('body').addClass('loaded');
 
-    firstContent.animate({top: "50%"}, 1000);
+    about.animate({top: "50%"}, 1000);
 
     icons.animate({opacity: 1}, 1000);
 

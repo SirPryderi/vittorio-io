@@ -3,9 +3,10 @@ layout: default
 ---
 
 <div id="rocket">{% include rocket.svg %}</div>
-<section id="first">
-  <div id="first_content">
-    <img alt="{{ site.author }}" id="avatar" src="{{ 'assets/img/avatar.png' | relative_url }}" />
+
+<section id="sidebar">
+  <div class="about">
+    <img alt="{{ site.author }}" class="avatar" src="{{ 'assets/img/avatar.png' | relative_url }}" />
     <p>
       Hello,<br />
       I am {{ site.author_short }}.<br />
@@ -16,7 +17,7 @@ layout: default
     </p>
   </div>
 
-  <div id="icons">
+  <div class="social-icons">
     <a href="https://www.linkedin.com/in/{{site.social.handles.linkedin}}/"><i class="fab fa-linkedin"></i></a>
     <a href="https://www.facebook.com/{{site.social.handles.facebook}}"><i class="fab fa-facebook-square"></i></a>
     <a href="mailto:{{site.social.email}}"><i class="fas fa-envelope-square"></i></a>
@@ -27,6 +28,6 @@ layout: default
   </div>
 </section>
 
-<section id="second">
-  <div id="second_content">{{ content }}</div>
+<section id="content">
+  <div id="content-inner">{{ content }}</div>
 </section>
