@@ -16,12 +16,8 @@ a {
   .social-icons & {
     font-size: 34px;
     color: $white;
-    transition: all 200ms;
-    vertical-align: bottom;
 
     &:hover {
-      font-size: 40pt;
-      margin: 0 5px;
       color: $yellow;
     }
 

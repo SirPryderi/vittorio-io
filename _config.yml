@@ -57,6 +57,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - github-pages
+
+collections:
+ posts:
+    output: true
+    permalink: /blog/:title
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
