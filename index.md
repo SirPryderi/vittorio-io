@@ -39,8 +39,8 @@ Simple and intuitive app to calculate the ideal exposure time while shooting ast
 
 Stars are not fixed in the sky (rather they appear not to because of Earth's rotation), so exposing for too long will start showing motion blur. Calculating the correct exposure time on the field can be tricky, and many approximation rules (e.g.: 400 rule) are often way off from the actual value. This app just solves all of that!
 
-{% include link.html text="Github Page" href="https://github.com/SirPryderi/astrophotography-calculator" icon="github" %}
-&nbsp;
+<!-- {% include link.html text="Github Page" href="https://github.com/SirPryderi/astrophotography-calculator" icon="github" %} -->
+<!-- &nbsp; -->
 {% include link.html text="Play Store" href="https://play.google.com/store/apps/details?id=io.github.sirpryderi.astrophotographycalculator" icon="google-play" %}
 
 ### Elysium Bot for Discord
