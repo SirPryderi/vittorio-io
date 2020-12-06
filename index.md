@@ -43,6 +43,13 @@ Stars are not fixed in the sky (rather they appear not to because of Earth's rot
 &nbsp;
 {% include link.html text="Play Store" href="https://play.google.com/store/apps/details?id=io.github.sirpryderi.astrophotographycalculator" icon="google-play" %}
 
+### Elysium Bot for Discord
+Elysium Bot is a Discord bot that helps with Disco Elysium based campaigns.
+
+It is backed by a Google Sheet spreadsheet with the characters information.
+
+{% include link.html text="Github Page" href="https://github.com/SirPryderi/elysium-bot/" icon="github" %}
+
 ### Radial Audio Switcher
 
 A C# WPF application that allows to change the audio output device using a video-game-like radial menu.
