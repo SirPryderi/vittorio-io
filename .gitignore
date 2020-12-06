@@ -49,3 +49,9 @@ Temporary Items
 
 /.idea/
 .map
+
+vendor
+.bundle
+_site
+.sass-cache
+.jekyll-metadata

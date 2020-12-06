@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div id="rocket">{% include rocket.svg %}</div>
+<section id="first">
+  <div id="first_content">
+    <img alt="{{ site.name }}" id="avatar" src="assets/img/avatar.png" />
+    <p>
+      Hello,<br />
+      I am {{ site.name_short }}.<br />
+      <span class="font-smaller">
+        <span class="no_word_break">{{ site.position }}</span>
+        <a href="{{ site.worplace_url }}" target="_blank">@{{ site.workplace }}</a>
+      </span>
+    </p>
+  </div>
+
+  <div id="icons">
+    <a href="https://www.linkedin.com/in/{{site.linkedin_username }}/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/{{site.facebook_username }}"><i class="fab fa-facebook-square"></i></a>
+    <a href="mailto:{{site.email}}"><i class="fas fa-envelope-square"></i></a>
+    <a href="https://www.instagram.com/{{site.instagram_username}}/"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/{{site.github_username}}/"><i class="fab fa-github-square"></i></a>
+    <a href="https://{{site.itchio_username}}.itch.io/"><i class="fab fa-itch-io" data-fa-mask="fas fa-square" data-fa-transform="shrink-6"></i></a>
+    <a href="https://play.google.com/store/apps/developer?id={{site.google_play_id}}" ><i class="fab fa-google-play" data-fa-mask="fas fa-square" data-fa-transform="shrink-6"></i></a>
+  </div>
+</section>
+
+<section id="second">
+  <div id="second_content">{{ content }}</div>
+</section>
