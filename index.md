@@ -89,6 +89,14 @@ Stars are not fixed in the sky (rather they appear not to because of Earth's rot
 &nbsp;
 {% include link.html text="Play Store" href="https://play.google.com/store/apps/details?id=io.github.sirpryderi.astrophotographycalculator" icon="google-play" %}
 
+### Radial Audio Switcher
+
+A C# WPF application that allows to change the audio output device using a video-game-like radial menu.
+
+In my opinion this a much better way of changing the audio device, as it requires way less clicks.
+
+{% include link.html text="Github Page" href="https://github.com/SirPryderi/radial-audio-switcher" icon="github" %}
+
 ### Astrarium
 
 A Java application capable of calculating orbits, and launch windows to
