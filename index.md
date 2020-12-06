@@ -3,7 +3,7 @@ title: Home
 layout: landing_page
 ---
 
-## Bio
+## A few words about me
 
 My name is Vittorio Iocolano (also known as SirPryderi on the web), I studied
 Applied Computing at the University of Stirling, in Scotland. Apart from doing
