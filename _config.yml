@@ -15,31 +15,49 @@
 # in the templates via {{ site.myvariable }}.
 # METADATA
 title: Vittorio Iocolano's Website
-name: Vittorio Iocolano
-name_short: Vittorio
+author: Vittorio Iocolano
+author_short: Vittorio
+tagline: Personal Website
 description: Vittorio Iocolano's personal website, containing biography and portfolio
 keywords: Vittorio Iocolano, Software, Game, Web, Web, Developer, Programmer, Engineer, Scotland, Stirling
 position: Software Engineer
-workplace: WRLD
-workplace_url: https://www.wrld3d.com
+workplace: 
+  name: WRLD
+  url: https://www.wrld3d.com
 # SOCIALS
-email: pryderi.mail@gmail.com
-github_username: SirPryderi
-facebook_username: vittorioiocolano
-instagram_username: sirpryderi
-itchio_username: sirpryderi
-linkedin_username: vittorio-iocolano
-google_play_id: Vittorio+Iocolano
+social:
+  name: Vittorio Iocolano
+  email: pryderi.mail@gmail.com
+  links:
+    - https://twitter.com/SirPryderi
+    - https://www.facebook.com/vittorioiocolano
+    - https://www.linkedin.com/in/vittorio-iocolano
+    - https://github.com/SirPryderi
+    - https://instagram.com/SirPryderi
+    - https://sirpryderi.itch.io
+  handles:
+    github: SirPryderi
+    facebook: vittorioiocolano
+    instagram: sirpryderi
+    itchio: sirpryderi
+    linkedin: vittorio-iocolano
+    google_play: Vittorio+Iocolano
 # CONFIG
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://sirpryderi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/img/avatar.png"
+webmaster_verifications:
+  google: "HZhxid0szqsFDeVGP9Ehpi5Rabtxh7k-qBy5c32t26g"
 google_analytics_token: "UA-19676043-2"
-google_site_verification: "HZhxid0szqsFDeVGP9Ehpi5Rabtxh7k-qBy5c32t26g"
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - github-pages
+  
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
