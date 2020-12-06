@@ -3,32 +3,20 @@ title: Home
 layout: landing_page
 ---
 
-## A few words about me
+## About Vittorio Iocolano (aka SirPryderi)
 
-My name is Vittorio Iocolano (also known as SirPryderi on the web), I studied
-Applied Computing at the University of Stirling, in Scotland. Apart from doing
-all the other things humans do, such as breathing, walking and forgetting you
-made tea until it is cold, I enjoy writing code.
+I've been a full-time software engineer since I took an Applied
+Computing degree in 2019 at the University of Stirling, Scotland.
 
-Programming aside, I love video games, hiking, photography, and space
+I am proficient in web development, but my curiosity leads me towards learning
+and experimenting with different technologies and programming languages,
+giving me a all-round knowledge in everything that is related to code.
+
+In my free time, I enjoy making free and open source applications of different
+nature, including simulation, tooling and thought-provoking games.
+
+Programming aside, I love photography, hiking, cycling, video games, and space
 exploration <span class="hide-sm">(have you noticed the rocket?)</span>.
-
-## Skills
-
-My skills are mainly focused on web technologies such as:
-
-- HTML
-- PHP
-- CSS3
-- jQuery
-- JavaScript
-- HTML5 Canvas
-
-But I also have a general knowledge of:
-
-- Java
-- C++
-- Android Development
 
 ## Games
 
