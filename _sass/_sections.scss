@@ -13,8 +13,6 @@ section {
 
   @media screen and (max-width: $break-small) {
     width: 100% !important;
-    min-height: 100%;
-    //height: auto;
   }
 
   .loaded & {
@@ -170,6 +168,14 @@ section {
     flex-flow: row;
     align-items: center;
     justify-content: space-evenly;
+
+    @media screen and (max-width: $break-small) {
+      flex-flow: column;
+
+      & > * {
+        margin: 10px 0;
+      }
+    }
   }
 
   .avatar {
