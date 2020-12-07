@@ -1,6 +1,5 @@
 ---
 name: Astrophotography Calculator
-layout: default
 priority: 70
 ---
 

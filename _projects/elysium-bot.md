@@ -1,6 +1,5 @@
 ---
 name: Elysium Bot for Discord
-layout: default
 priority: 20
 ---
 

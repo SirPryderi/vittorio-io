@@ -1,6 +1,5 @@
 ---
 name: SimOrbit
-layout: default
 ---
 
 A javascript-based orbital mechanics simulator. It is useful to learn more

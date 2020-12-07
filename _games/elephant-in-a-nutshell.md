@@ -1,6 +1,5 @@
 ---
 name: Elephant in a Nutshell
-layout: default
 ---
 
 A javascript based old school game, with some odd irony and nonsense in

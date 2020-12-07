@@ -1,6 +1,5 @@
 ---
 name: Green Inc.
-layout: default
 priority: 70
 ---
 

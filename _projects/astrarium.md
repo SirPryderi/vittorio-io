@@ -1,6 +1,5 @@
 ---
 name: Astrarium
-layout: default
 ---
 
 A Java application capable of calculating orbits, and launch windows to

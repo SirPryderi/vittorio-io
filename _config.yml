@@ -21,7 +21,7 @@ tagline: Personal Website
 description: Vittorio Iocolano's personal website, containing biography and portfolio
 keywords: Vittorio Iocolano, Software, Game, Web, Web, Developer, Programmer, Engineer, Scotland, Stirling
 position: Software Engineer
-workplace: 
+workplace:
   name: WRLD
   url: https://www.wrld3d.com
 # SOCIALS
@@ -68,7 +68,20 @@ collections:
   games:
     output: true
     permalink: /:collection/:title
-  
+
+defaults:
+  - scope:
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      type: "games"
+    values:
+      layout: "project"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

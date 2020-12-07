@@ -1,6 +1,5 @@
 ---
 name: Open Hosts Editor
-layout: default
 priority: 100
 ---
 

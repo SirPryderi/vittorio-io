@@ -1,6 +1,5 @@
 ---
 name: Radial Audio Switcher
-layout: default
 ---
 
 A C# WPF application that allows to change the audio output device using a video-game-like radial menu.
