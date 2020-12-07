@@ -56,7 +56,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - github-pages
 
 collections:
   posts:
@@ -64,9 +63,11 @@ collections:
     permalink: /blog/:title
   projects:
     output: true
+    sort_by: priority
     permalink: /:collection/:title
   games:
     output: true
+    sort_by: priority
     permalink: /:collection/:title
 
 defaults:
@@ -78,10 +79,12 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+      priority: 0
   - scope:
       type: "games"
     values:
       layout: "project"
+      priority: 0
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

@@ -4,8 +4,9 @@ priority: 70
 ---
 
 As part of my final year project, I developed a prototype of a game that
-conveyed a strong message about climate change. The game was designed to
-be a management game, where the player takes the role of a fictitious
+conveyed a strong message about climate change.
+
+The game was designed to be a management game, where the player takes the role of a fictitious
 company that has to reduce global emissions. The game was developed in
 Unity with C#.
 

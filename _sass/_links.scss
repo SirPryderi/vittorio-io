@@ -1,16 +1,18 @@
 a {
   text-decoration: none;
+  color: inherit;
 
-  color: $blue;
+  &:not(.no-style) {
+    color: $blue;
+    font-weight: bold;
 
-  font-weight: bold;
+    &:hover {
+      color: $yellow;
+    }
 
-  &:hover {
-    color: $yellow;
-  }
-
-  &:active {
-    color: $light_blue;
+    &:active {
+      color: $light_blue;
+    }
   }
 
   .social-icons & {

@@ -22,25 +22,16 @@ exploration <span class="hide-sm">(have you noticed the rocket?)</span>.
 
 Check out all the projects I'm working on my GitHub [github.com/SirPryderi](https://github.com/SirPryderi/){:target="\_blank"}.
 
-{% assign projects = site.projects | sort: 'priority' | reverse %}
-{% for project in projects %}
+{% include cards.html items=site.projects max=4 %}
 
-### {{ project.name }} [⭢]({{project.url}})
-
-{{ project.content }}
-{% endfor %}
+[See all projects](./projects)
 
 ## Games
 
 Check out all the games I've made at [sirpryderi.itch.io](https://sirpryderi.itch.io/){:target="\_blank"}.
 
-{% assign games = site.games | sort: 'priority' | reverse %}
-{% for game in games %}
-
-### {{ game.name }} [⭢]({{game.url}})
-
-{{ game.content }}
-{% endfor %}
+{% include cards.html items=site.games max=4 %}
+[See all games](./games)
 
 ## Photography
 

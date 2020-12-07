@@ -3,7 +3,9 @@ name: Astrarium
 ---
 
 A Java application capable of calculating orbits, and launch windows to
-execute transfers between them. The program features a 2D preview of the
+execute transfers between them. 
+
+The program features a 2D preview of the
 transfer, shown as a map of the Solar system, and attempts to make the UIs
 as neat and light as possible.
 
