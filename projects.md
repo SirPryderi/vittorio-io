@@ -7,7 +7,7 @@ permalink: projects/
 {% assign projects = site.projects | sort: 'priority' | reverse %}
 {% for project in projects %}
 
-### {{ project.name }} [⭢]({{project.url}})
+### [{{ project.name }} <i class="fa fa-long-arrow-alt-right"></i>]({{project.url}}){:.no-style}
 
 {{ project.content }}
 {% endfor %}

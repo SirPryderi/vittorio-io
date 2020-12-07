@@ -7,7 +7,7 @@ permalink: games/
 {% assign games = site.games | sort: 'priority' | reverse %}
 {% for game in games %}
 
-### {{ game.name }} [⭢]({{game.url}})
+### [{{ game.name }} <i class="fa fa-long-arrow-alt-right"></i>]({{game.url}}){:.no-style}
 
 {{ game.content }}
 {% endfor %}
