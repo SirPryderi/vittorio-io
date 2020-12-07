@@ -59,9 +59,15 @@ plugins:
   - github-pages
 
 collections:
- posts:
+  posts:
     output: true
     permalink: /blog/:title
+  projects:
+    output: true
+    permalink: /:collection/:title
+  games:
+    output: true
+    permalink: /:collection/:title
   
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
