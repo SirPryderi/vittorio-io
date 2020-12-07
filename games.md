@@ -1,6 +1,7 @@
 ---
 title: Games
 layout: default
+permalink: games/
 ---
 
 {% assign games = site.games | sort: 'priority' | reverse %}

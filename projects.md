@@ -1,6 +1,7 @@
 ---
 title: Projects
 layout: default
+permalink: projects/
 ---
 
 {% assign projects = site.projects | sort: 'priority' | reverse %}
