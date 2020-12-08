@@ -18,6 +18,14 @@ nature, including simulation, tooling and thought-provoking games.
 Programming aside, I love photography, hiking, cycling, video games, and space
 exploration <span class="hide-sm">(have you noticed the rocket?)</span>.
 
+## Blog
+
+Sometimes I write stuff, these are my latest blog posts.
+
+{% include cards.html items=site.posts max=4 %}
+
+[See all posts](./blog)
+
 ## Projects
 
 Check out all the projects I'm working on my GitHub [github.com/SirPryderi](https://github.com/SirPryderi/){:target="\_blank"}.
