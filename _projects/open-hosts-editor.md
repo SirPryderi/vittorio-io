@@ -14,4 +14,4 @@ shell commands to perform its core operations. The application has over
 &nbsp;
 {% include link.html text="Play Store" href="https://play.google.com/store/apps/details?id=me.vittorio_io.openhostseditor" icon="google-play" %}
 &nbsp;
-{% include link.html text="Discuss on Discord" href="https://discord.gg/cByqs7zw" icon="discord" %}
+{% include link.html text="Discuss on Discord" href="https://discord.gg/ddv7VRY2vh" icon="discord" %}

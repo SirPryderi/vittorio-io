@@ -37,7 +37,7 @@ The greatest joy was when [phrogg](https://github.com/phrogg) opened a [PR](http
 
 ## Back to the present
 
-Now (Dec 2020), I finally decided to take Open Host Editor out of early access, and as an inauguration gift I opened [Discord server](https://discord.gg/cByqs7zw) for everyone to discuss issues, support and suggestions. You can find the app on the [Play Store](https://play.google.com/store/apps/details?id=me.vittorio_io.openhostseditor).
+Now (Dec 2020), I finally decided to take Open Host Editor out of early access, and as an inauguration gift I opened [Discord server](https://discord.gg/ddv7VRY2vh) for everyone to discuss issues, support and suggestions. You can find the app on the [Play Store](https://play.google.com/store/apps/details?id=me.vittorio_io.openhostseditor).
 
 ## The end
 
