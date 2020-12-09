@@ -74,7 +74,7 @@ defaults:
   - scope:
       type: "posts"
     values:
-      layout: "default"
+      layout: "post"
   - scope:
       type: "projects"
     values:

@@ -155,9 +155,8 @@ section {
 }
 
 #footer {
-  $color: darken($light_grey, 10);
   padding: 50px 0;
-  border-top: 1px solid $color;
+  border-top: 1px solid $off_grey;
   width: 100%;
   height: unset;
 
@@ -180,11 +179,11 @@ section {
 
   .avatar {
     max-width: 100px;
-    border: 2px solid $color;
+    border: 2px solid $off_grey;
   }
 
   .social-icons a {
-    color: $color;
+    color: $off_grey;
     &:hover {
       color: $blue;
     }
